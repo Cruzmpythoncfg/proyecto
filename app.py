@@ -13,7 +13,7 @@ st.set_page_config(
 
 def load_data():
     # Carga de los Archivos
-    gdf = gpd.read_file('estadosdevenezuela\Estados_Venezuela.shp')
+    gdf = gpd.read_file('Estados_Venezuela.shp')
     cdf = pd.read_excel('casos.xlsx', usecols= ['Caso', 'Creado en', 'Transmisor/Nombre', 'Estatus', 'Transmisor/Provincia/Nombre provincia', 'Categoría/Nombre de categoría', 'Mensaje/Contenido']) #
     pdf = pd.read_excel('proyectos.xlsx')
 
